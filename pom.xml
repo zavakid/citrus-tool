@@ -23,9 +23,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/webx/citrus-tool</connection>
-        <developerConnection>scm:git:git@github.com:webx/citrus-tool.git</developerConnection>
-        <url>http://github.com/webx/citrus-tool</url>
+      <connection>scm:git:git@github.com:zavakid/citrus-tool.git</connection>
+      <developerConnection>scm:git:git@github.com:zavakid/citrus-tool.git</developerConnection>
+      <url>https://github.com/zavakid/citrus-tool</url>
     </scm>
     <developers>
         <developer>
