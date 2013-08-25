@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <groupId>com.zavakid.citrus.tool</groupId>
         <artifactId>antx-parent</artifactId>
-        <version>1.1.zavakid-patch.1-SNAPSHOT</version>
+        <version>1.1.zavakid-patch.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -74,8 +72,7 @@
                                 </includes>
                             </artifactSet>
                             <transformers>
-                                <transformer
-                                    implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.alibaba.antx.expand.cli.Main</mainClass>
                                 </transformer>
                             </transformers>
@@ -114,23 +111,17 @@
                         <phase>verify</phase>
                         <configuration>
                             <target>
-                                <concat destfile="${project.build.directory}/autoexpand"
-                                    binary="true">
+                                <concat destfile="${project.build.directory}/autoexpand" binary="true">
 
-                                    <filelist dir="${project.build.scriptSourceDirectory}"
-                                        files="scriptHeader.sh" />
+                                    <filelist dir="${project.build.scriptSourceDirectory}" files="scriptHeader.sh" />
 
-                                    <filelist dir="${project.build.directory}"
-                                        files="antx-autoexpand-${project.version}.jar" />
+                                    <filelist dir="${project.build.directory}" files="antx-autoexpand-${project.version}.jar" />
 
                                 </concat>
 
-                                <chmod dir="${project.build.directory}" perm="ugo+rx"
-                                    includes="autoexpand" />
+                                <chmod dir="${project.build.directory}" perm="ugo+rx" includes="autoexpand" />
 
-                                <tar longfile="gnu"
-                                    destfile="${project.build.directory}/autoexpand.tgz"
-                                    compression="gzip">
+                                <tar longfile="gnu" destfile="${project.build.directory}/autoexpand.tgz" compression="gzip">
                                     <tarfileset dir="${project.build.directory}" mode="755">
                                         <include name="autoexpand" />
                                         <include name="autoexpand.exe" />
