@@ -8,7 +8,7 @@
         <version>7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.alibaba.citrus.tool</groupId>
+    <groupId>com.zavakid.citrus.tool</groupId>
     <artifactId>citrus-tool-parent</artifactId>
     <packaging>pom</packaging>
     <name>Citrus Tool Parent Project</name>
@@ -40,6 +40,15 @@
                 <picUrl>http://i54.tinypic.com/2jewmjr.jpg</picUrl>
             </properties>
             <timezone>-6</timezone>
+        </developer>
+        <developer>
+          <id>zavakid</id>
+          <name>zavakid</name>
+          <email>zava.kid@gmail.com</email>
+          <roles>
+            <role>developer</role>
+          </roles>
+          <timezone>8</timezone>
         </developer>
     </developers>
     <properties>

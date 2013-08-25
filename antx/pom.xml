@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>com.alibaba.citrus.tool</groupId>
+        <groupId>com.zavakid.citrus.tool</groupId>
         <artifactId>citrus-tool-parent</artifactId>
         <version>1.1</version>
         <relativePath>../pom.xml</relativePath>
@@ -167,7 +167,7 @@
                 <configuration>
                     <artifactItems>
                         <artifactItem>
-                            <groupId>com.alibaba.citrus.tool</groupId>
+                            <groupId>com.zavakid.citrus.tool</groupId>
                             <artifactId>antx-autoconfig</artifactId>
                             <version>${antx.version}</version>
                             <type>tgz</type>
@@ -175,7 +175,7 @@
                             <destFileName>autoconfig-${antx.version}.tgz</destFileName>
                         </artifactItem>
                         <artifactItem>
-                            <groupId>com.alibaba.citrus.tool</groupId>
+                            <groupId>com.zavakid.citrus.tool</groupId>
                             <artifactId>antx-autoexpand</artifactId>
                             <version>${antx.version}</version>
                             <type>tgz</type>
